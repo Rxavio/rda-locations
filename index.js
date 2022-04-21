@@ -2,8 +2,13 @@ const express = require('express')
 const { Provinces, Districts } = require('rwanda');
 const app = express()
 app.get('/', function (req, res) {
-  res.send('Hello World')
+    res.send('Hello World')
 })
+app.get('/province', function (req, res) {
+    res.send(Provinces())
+  })
+
+
 console.log(Provinces()); // [ 'East', 'Kigali', 'North', 'South', 'West' ]
 console.log(Districts()); // [ 'Bugesera', 'Gatsibo', 'Kayonza', 'Kirehe',...]
 app.listen(3000)
