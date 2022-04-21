@@ -29,7 +29,11 @@ app.get('/north/disctrict', function (req, res) {
   }) 
 app.get('/east/disctrict', function (req, res) {
     res.send(Districts("East"))
-  })  
+  }) 
+  app.get('/west/disctrict', function (req, res) {
+    res.send(Districts("West"))
+  })    
+  
 
 app.listen(3000)
 console.log('app running on port: 3000 ');
