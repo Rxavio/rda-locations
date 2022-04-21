@@ -23,7 +23,11 @@ app.get('/kigali/disctrict', function (req, res) {
   })
 app.get('/south/disctrict', function (req, res) {
     res.send(Districts("South"))
-  })  
+  }) 
+app.get('/north/disctrict', function (req, res) {
+    res.send(Districts("North"))
+  }) 
+
 
 app.listen(3000)
 console.log('app running on port: 3000 ');
