@@ -20,6 +20,8 @@ app.get('/sectors', function (req, res) {
   })
 
 console.log(Districts("kigali")); 
+console.log(Districts("East"));
+
 
 
 app.listen(3000)
