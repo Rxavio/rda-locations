@@ -4,11 +4,11 @@ const app = express()
 app.get('/', function (req, res) {
     res.send('Hello World')
 })
-app.get('/province', function (req, res) {
+app.get('/provinces', function (req, res) {
     res.send(Provinces())
   })
 
-app.get('/province', function (req, res) {
+app.get('/districts', function (req, res) {
     res.send(Districts())
   })
 // console.log(Provinces()); // [ 'East', 'Kigali', 'North', 'South', 'West' ]
