@@ -18,13 +18,9 @@ app.get('/sectors', function (req, res) {
   app.get('/cells', function (req, res) {
     res.send(Cells())
   })
-
-console.log(Districts("kigali")); 
-console.log(Districts("East"));
-console.log(Districts("North"));
-console.log(Districts("South"));
-console.log(Districts("West"));
-
+app.get('/kigali/disctrict', function (req, res) {
+    res.send(Districts("kigali"))
+  })
 
 app.listen(3000)
 console.log('app running on port: 3000 ');
