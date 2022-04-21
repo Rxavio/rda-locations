@@ -8,8 +8,10 @@ app.get('/province', function (req, res) {
     res.send(Provinces())
   })
 
-
-console.log(Provinces()); // [ 'East', 'Kigali', 'North', 'South', 'West' ]
-console.log(Districts()); // [ 'Bugesera', 'Gatsibo', 'Kayonza', 'Kirehe',...]
+app.get('/province', function (req, res) {
+    res.send(Districts())
+  })
+// console.log(Provinces()); // [ 'East', 'Kigali', 'North', 'South', 'West' ]
+// console.log(Districts()); // [ 'Bugesera', 'Gatsibo', 'Kayonza', 'Kirehe',...]
 app.listen(3000)
 console.log('app running on port: 3000 ');
