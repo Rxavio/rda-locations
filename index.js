@@ -22,7 +22,7 @@ app.get('/sectors', function (req, res) {
 console.log(Districts("kigali")); 
 console.log(Districts("East"));
 console.log(Districts("North"));
-
+console.log(Districts("South"));
 
 
 app.listen(3000)
