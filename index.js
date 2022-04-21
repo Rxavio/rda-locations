@@ -21,6 +21,9 @@ app.get('/sectors', function (req, res) {
 app.get('/kigali/disctrict', function (req, res) {
     res.send(Districts("kigali"))
   })
+app.get('/south/disctrict', function (req, res) {
+    res.send(Districts("South"))
+  })  
 
 app.listen(3000)
 console.log('app running on port: 3000 ');
