@@ -2,7 +2,7 @@ const express = require('express')
 const { Provinces, Districts, Sectors, Cells } = require("rwanda");
 const app = express()
 app.get('/', function (req, res) {
-    res.send('Hello World')
+    res.send('Hello Worlddd')
 })
 app.get('/provinces', function (req, res) {
     res.send(Provinces())
